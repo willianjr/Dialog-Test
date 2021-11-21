@@ -7,9 +7,21 @@ interface colors {
   primary: {
     white: string
     black: string
-    gold: string
+    primary: string
+    secondary: string
   }
-  golds: {
+  primaries: {
+    90: string
+    80: string
+    70: string
+    60: string
+    50: string
+    40: string
+    30: string
+    20: string
+    10: string
+  }
+  secondaries: {
     90: string
     80: string
     70: string
@@ -57,10 +69,11 @@ interface colors {
 
 interface input {
   background: string
+  backgroundHover?: string
   text: string
-  textHover: string
+  textHover?: string
   border: string
-  borderHover: string
+  borderHover?: string
   shadow?: string
   shadowHover?: string
 }

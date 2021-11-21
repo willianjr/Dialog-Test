@@ -8,13 +8,21 @@ export const GlobalStyle = createGlobalStyle<{ theme: themeProps }>`
     box-sizing:border-box;
 
   }
+  html{ scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
 body{
-	  background: ${({ theme: { colors } }) => colors.background.body};
-    background-size:cover;
-    background-attachment:fixed;
-    background-repeat:repeat;
+	  background: ${({ theme: { colors } }) => colors.background.body} ;
+    background-size:200vw 50vh, 100vw 100vh;
+    background-attachment:scroll,scroll;
+    background-position:center -20vh,0 0;
+    background-repeat:no-repeat, repeat;
     min-height:100vh;
     overflow:auto;
+
+    @media (max-width: 767px) {
+    background-attachment:fixed;
+  }
 
 	}
   input{
