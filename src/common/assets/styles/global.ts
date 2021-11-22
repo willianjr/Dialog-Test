@@ -13,15 +13,15 @@ export const GlobalStyle = createGlobalStyle<{ theme: themeProps }>`
   }
 body{
 	  background: ${({ theme: { colors } }) => colors.background.body} ;
-    background-size:200vw 50vh, 100vw 100vh;
+    background-size:200vw 55vh, 100vw 95vh;
     background-attachment:scroll,scroll;
-    background-position:center -20vh,0 0;
-    background-repeat:no-repeat, repeat;
+    background-position:center 0vh,0 0;
+    background-repeat:no-repeat, no-  repeat;
     min-height:100vh;
     overflow:auto;
 
     @media (max-width: 767px) {
-    background-attachment:fixed;
+
   }
 
 	}

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Layout, CardUser, Header } from '../../common/components'
-import { Rows, Cols } from './styled'
+import { Layout, CardUser, PerfilUser, Header } from '../../common/components'
+import { Rows, Cols, SubTitle } from './styled'
 
 import avatar from '../../common/assets/images/lixu/avatar1.png'
 import avatar2 from '../../common/assets/images/lixu/avatar2.png'
@@ -14,6 +14,16 @@ const HomePage = (): JSX.Element => {
         </Rows>
       </Layout.Header>
       <Layout.Main>
+        <Rows align={`stretch`} g={3}>
+          <PerfilUser
+            avatar={avatar}
+            name={`nome x ee e ee`}
+            email={`email@email.com`}
+            age={`23 years`}
+            company={`facebook`}
+          />
+        </Rows>
+        <SubTitle>Friends</SubTitle>
         <Rows align={`stretch`} g={3}>
           <Cols md={3} sm={12}>
             <CardUser avatar={avatar2} name={`nome x ee e ee`} />

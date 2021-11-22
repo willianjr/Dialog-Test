@@ -6,7 +6,7 @@ const defaultTheme: themeProps = {
     background: {
       card: '#FFFFFF',
       button: '#88B1AE',
-      body: 'radial-gradient(circle, rgba(225,240,238,1) 20%, rgba(221,232,231,1) 30%, rgba(243,243,243,0) 51%), linear-gradient(180deg, rgba(242,242,242,1) 31%, rgba(221,232,231,1) 45%, rgba(243,243,243,1) 45%);',
+      body: 'radial-gradient(circle, rgba(225,240,238,1) 20%, rgba(221,232,231,1) 30%, rgba(243,243,243,0) 51%), linear-gradient(180deg, rgba(242,242,242,1) 31%, rgba(221,232,231,1) 50%, rgba(243,243,243,1) 50%);',
     },
     primary: {
       white: '#ffffff',

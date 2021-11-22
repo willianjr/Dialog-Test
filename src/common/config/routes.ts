@@ -1,5 +1,5 @@
 // Pages
-import { Error404, HomePage } from '../../pages'
+import { Error404, HomePage, PerfilPage } from '../../pages'
 
 export interface IRoute {
   path: string
@@ -14,15 +14,15 @@ export interface IRoute {
 const routes: IRoute[] = [
   {
     path: '/',
-    name: 'Login',
+    name: 'Home',
     component: HomePage,
     exact: true,
     auth: false,
   },
   {
-    path: '/Home',
-    name: 'Home',
-    component: Error404,
+    path: '/Perfil/:perfil',
+    name: 'Perfil',
+    component: PerfilPage,
     exact: true,
     auth: false,
   },

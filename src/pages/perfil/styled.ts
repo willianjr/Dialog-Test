@@ -17,3 +17,13 @@ export const Rows = styled(Row).attrs(({ g, gx, gy, align = 'start' }: IRows) =>
 export const Cols = styled(Col).attrs(() => ({
   className: `align-items-stretch`,
 }))<ICol>``
+
+export const SubTitle = styled.h6.attrs(() => ({
+  className: ``,
+}))`
+  color: ${({ theme: { colors } }) => colors.primary.primary};
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid ${({ theme: { colors } }) => colors.primary.secondary};
+  margin: 1.5rem 0;
+`

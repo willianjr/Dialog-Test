@@ -15,11 +15,12 @@ export const Main = styled(Body).attrs(() => ({}))``
 export const Info = styled(Text).attrs(() => ({}))`
   padding: 0.5rem;
 `
-export const Title = styled.h4.attrs(() => ({}))`
+export const Title = styled.strong.attrs(() => ({}))`
   color: ${({ theme: { colors } }) => colors.primary.primary};
   font-size: 0.93rem;
   line-height: 0.93rem;
   margin: 0.25rem auto;
+  display: block;
 `
 export const Dados = styled.span.attrs(() => ({}))`
   color: ${({ theme: { colors } }) => colors.primary.black};
