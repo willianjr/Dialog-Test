@@ -1,5 +1,0 @@
-export { default as Animation } from './Animation'
-export { default as Layout } from './Layout'
-export { default as CardUser } from './CardUser'
-export { default as PerfilUser } from './PerfilUser'
-export { default as Header } from './Header'
