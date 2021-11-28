@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { Col, InputGroup } from 'react-bootstrap'
+import { useNavigate, Link } from 'react-router-dom'
 import { Logo, Rows, Input, ButtonSearch } from './styled'
 import { RiUserSearchFill } from 'react-icons/ri'
 import Images from '../../assets/images'
 
 const Header = (): JSX.Element => {
   const [search, setSearch] = useState('')
-  useEffect(() => {
-    console.log(search)
-  }, [search])
+  const navigate = useNavigate()
+
+  const handleSearch = () => {
+    search !== '' && navigate(`/search/${search}`)
+  }
+
   return (
     <Rows align={`center`}>
       <Col md={{ span: 2, offset: 1 }} sm={12}>
-        <Logo src={Images.logos.vertical} />
+        <Link to="/">
+          <Logo src={Images.logos.vertical} />
+        </Link>
       </Col>
       <Col md={{ span: 7, offset: 1 }} sm={12}>
         <InputGroup>
@@ -25,7 +31,7 @@ const Header = (): JSX.Element => {
             }}
             aria-label="search a friend"
           />
-          <ButtonSearch variant="outline-primary">
+          <ButtonSearch disabled={search === ''} variant="outline-primary" onClick={() => handleSearch()}>
             <RiUserSearchFill />
           </ButtonSearch>
         </InputGroup>

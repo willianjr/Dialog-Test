@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import { Container, Alert } from 'react-bootstrap'
 
 export const ContainerStyles = styled(Container).attrs(() => ({}))`
   padding: 0.5rem;
@@ -42,4 +42,9 @@ export const GoToTop = styled.button`
     height: 1rem !important;
     color: ${({ theme: { colors } }) => colors.primary.white};
   }
+`
+export const SemUsuarios = styled(Alert)`
+  background-color: ${({ theme: { colors } }) => colors.secondaries[20]};
+  border-color: ${({ theme: { colors } }) => colors.secondaries[50]};
+  color: ${({ theme: { colors } }) => colors.primary.primary};
 `

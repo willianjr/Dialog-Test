@@ -58,6 +58,12 @@ export const ButtonSearch = styled(Button)`
     background-color: ${({ theme: { colors } }) => colors.button.default.backgroundHover};
     color: ${({ theme: { colors } }) => colors.button.default.textHover};
   }
+  :disabled {
+    background: ${({ theme: { colors } }) => colors.button.default.background};
+    color: ${({ theme: { colors } }) => colors.button.default.text};
+    opacity: 0.5;
+    cursor: default;
+  }
 `
 
 declare interface IRows {

@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from 'react'
-import { HeaderStyle, ContainerStyles, MainStyle, GoToTop } from './styled'
+import { HeaderStyle, ContainerStyles, MainStyle, GoToTop, SemUsuarios } from './styled'
 import { FaArrowUp } from 'react-icons/fa'
 
 declare interface IProps {
@@ -8,12 +8,12 @@ declare interface IProps {
 
 const Container = ({ children }: IProps): JSX.Element => {
   const [showButton, setShowButton] = useState(false)
-  const scroll = document.documentElement.scrollTop
+
   const scrollToTop = (): void => {
     document.documentElement.scrollTop = 0
   }
   document.addEventListener('scroll', () => {
-    setShowButton(scroll > 300)
+    setShowButton(document.documentElement.scrollTop > 300)
   })
   return (
     <ContainerStyles>
@@ -32,5 +32,8 @@ const Header = ({ children }: IProps): JSX.Element => {
 const Main = ({ children }: IProps): JSX.Element => {
   return <MainStyle>{children}</MainStyle>
 }
+const SemUsuario = ({ children }: IProps): JSX.Element => {
+  return <SemUsuarios>{children}</SemUsuarios>
+}
 
-export default { Header, Container, Main }
+export default { Header, Container, Main, SemUsuario }

@@ -20,6 +20,13 @@ const routes: IRoute[] = [
     auth: false,
   },
   {
+    path: '/Search/:search',
+    name: 'Search',
+    component: HomePage,
+    exact: true,
+    auth: false,
+  },
+  {
     path: '/Perfil/:perfil',
     name: 'Perfil',
     component: PerfilPage,
