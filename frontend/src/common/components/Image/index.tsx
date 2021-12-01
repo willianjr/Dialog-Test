@@ -12,7 +12,7 @@ const Image = ({ src, css, width = '', height = '' }: ImageProps): JSX.Element =
 
   return (
     <>
-      <img onLoad={(e) => setImageLoaded(true)} src={src} className={css} loading={`lazy`} />
+      <img onLoad={() => setImageLoaded(true)} src={src} className={css} loading={`lazy`} />
       {!imageLoaded && <Skeleton width={width} height={height} />}
     </>
   )
