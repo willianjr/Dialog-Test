@@ -1,13 +1,14 @@
 > [[Voltar]](../README.md)
 
-***
+---
+
 <p align="center">
-  <img src="../___Layout/Marca/marca_mysocial-02.svg" width="300" />
+  <img src="../__Layout/Marca/marca_mysocial-02.svg" width="300" />
 </p>
 
 # MYSOCIAL - backend
 
-Projeto Teste para DIALOG
+_Projeto Teste para DIALOG, o back foi criado de forma simples a servir uma api para o frontend consultar_
 
 > O Documento abaixo terá uma breve descrição do projeto
 
@@ -15,18 +16,15 @@ _Tecnologias_
 
 ### #BackEnd
 
--   NodeJS
--   TypeScript
--   GraphQL
--   Apollo Server
-
+- NodeJS
+- TypeScript
+- GraphQL
+- Apollo Server
 
 ## Features
 
 1. List de Usuários
 2. Busca de um Usuário específico
-
-
 
 ## Instalação das dependências
 
@@ -48,6 +46,7 @@ _O projeto deverá ser rodado pelo comando abaixo_^
 ### 1. Busca todos usuarios
 
 > list(name:String){
+
     _id: ID
     index: Int
     name: String!
@@ -59,12 +58,15 @@ _O projeto deverá ser rodado pelo comando abaixo_^
     greeting: String
     picture: String
     friends: [User]
-  }
+
+}
 
 ---
+
 ### 1. Busca todos usuarios
 
 > user(user:ID){
+
     _id: ID
     index: Int
     name: String!
@@ -76,6 +78,7 @@ _O projeto deverá ser rodado pelo comando abaixo_^
     greeting: String
     picture: String
     friends: [User]
-  }
+
+}
 
 ---
