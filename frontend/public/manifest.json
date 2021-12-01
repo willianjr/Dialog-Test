@@ -40,7 +40,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/android-icon-192x192.png",
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "density": "5.0",
