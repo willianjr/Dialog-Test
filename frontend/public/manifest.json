@@ -43,8 +43,7 @@
       "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "density": "5.0",
-      "purpose": "any maskable"
+      "density": "5.0"
     }
   ],
   "start_url": ".",
