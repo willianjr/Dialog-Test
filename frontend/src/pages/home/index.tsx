@@ -12,7 +12,6 @@ const HomePage = (): JSX.Element => {
   const { loading, error, data } = useQuery(queries.GET_LIST, {
     variables: { searchParams },
   })
-  if (error) return <h1>`Error! ${JSON.stringify(error, null, 2)}`</h1>
 
   return (
     <Layout.Container>
@@ -22,7 +21,9 @@ const HomePage = (): JSX.Element => {
         </Rows>
       </Layout.Header>
       <Layout.Main>
-        {loading ? (
+        {error ? (
+          <h1>Error ao conectar na api.</h1>
+        ) : loading ? (
           <Loading>Carregando</Loading>
         ) : (
           <Rows align={`stretch`} g={3}>
