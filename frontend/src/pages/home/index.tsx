@@ -22,7 +22,7 @@ const HomePage = (): JSX.Element => {
       </Layout.Header>
       <Layout.Main>
         {error ? (
-          <h1>Error ao conectar na api.</h1>
+          <Layout.SemUsuario>Error ao conectar na api.</Layout.SemUsuario>
         ) : loading ? (
           <Loading>Carregando</Loading>
         ) : (
