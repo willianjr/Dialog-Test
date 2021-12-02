@@ -4,7 +4,7 @@ import { Layout, CardUser, Header, Loading } from '../../common/components'
 import { Rows, Cols } from './styled'
 import userType from '../../common/interfaces/user'
 // import queries from '../../main/queries'
-import { useParams } from 'react-router'
+// import { useParams } from 'react-router'
 
 const HomePage = (): JSX.Element => {
   // const { search } = useParams()
