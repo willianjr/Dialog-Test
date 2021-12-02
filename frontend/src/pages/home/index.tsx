@@ -1,14 +1,14 @@
 import React from 'react'
-import { useQuery } from '@apollo/client'
+// import { useQuery } from '@apollo/client'
 import { Layout, CardUser, Header, Loading } from '../../common/components'
 import { Rows, Cols } from './styled'
 import userType from '../../common/interfaces/user'
-import queries from '../../main/queries'
+// import queries from '../../main/queries'
 import { useParams } from 'react-router'
 
 const HomePage = (): JSX.Element => {
-  const { search } = useParams()
-  const searchParams = search || ''
+  // const { search } = useParams()
+  // const searchParams = search || ''
   /* const { loading, error, data } = useQuery(queries.GET_LIST, {
     variables: { searchParams },
   }) */
