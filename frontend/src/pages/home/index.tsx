@@ -9,9 +9,12 @@ import { useParams } from 'react-router'
 const HomePage = (): JSX.Element => {
   const { search } = useParams()
   const searchParams = search || ''
-  const { loading, error, data } = useQuery(queries.GET_LIST, {
+  /* const { loading, error, data } = useQuery(queries.GET_LIST, {
     variables: { searchParams },
-  })
+  }) */
+  const loading = false
+  const error = null
+  const data = { list: [] }
 
   return (
     <Layout.Container>
@@ -22,7 +25,7 @@ const HomePage = (): JSX.Element => {
       </Layout.Header>
       <Layout.Main>
         {error ? (
-          <Layout.SemUsuario>{error}Error ao conectar na api.</Layout.SemUsuario>
+          <Layout.SemUsuario>{error.message}Error ao conectar na api.</Layout.SemUsuario>
         ) : loading ? (
           <Loading>Carregando</Loading>
         ) : (
