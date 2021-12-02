@@ -12,7 +12,7 @@ const HomePage = (): JSX.Element => {
   const { loading, error, data } = useQuery(queries.GET_USER, {
     variables: { perfilParams },
   })
-  console.log(data)
+
   if (error) return <h1>`Error! ${JSON.stringify(error, null, 2)}`</h1>
   return (
     <Layout.Container>
