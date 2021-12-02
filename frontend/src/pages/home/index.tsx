@@ -25,7 +25,7 @@ const HomePage = (): JSX.Element => {
       </Layout.Header>
       <Layout.Main>
         {error ? (
-          <Layout.SemUsuario>{error.message}Error ao conectar na api.</Layout.SemUsuario>
+          <Layout.SemUsuario>{error}Error ao conectar na api.</Layout.SemUsuario>
         ) : loading ? (
           <Loading>Carregando</Loading>
         ) : (
