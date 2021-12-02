@@ -22,7 +22,7 @@ const HomePage = (): JSX.Element => {
       </Layout.Header>
       <Layout.Main>
         {error ? (
-          <Layout.SemUsuario>Error ao conectar na api.</Layout.SemUsuario>
+          <Layout.SemUsuario>{error}Error ao conectar na api.</Layout.SemUsuario>
         ) : loading ? (
           <Loading>Carregando</Loading>
         ) : (
@@ -30,6 +30,7 @@ const HomePage = (): JSX.Element => {
             {data.list.map((item: userType, index: number) => (
               <Cols key={index} md={3} sm={12}>
                 <CardUser
+                  url={true}
                   id={item._id}
                   avatar={item.picture}
                   name={item.name}

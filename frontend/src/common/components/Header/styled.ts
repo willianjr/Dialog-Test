@@ -27,11 +27,11 @@ export const Input = styled(Control)`
   ::placeholder,
   ::-webkit-input-placeholder {
     color: ${({ theme: { colors } }) => colors.input.default.text};
-    filter: opacity(0.4);
+    filter: opacity(0.8);
   }
   :-ms-input-placeholder {
     color: ${({ theme: { colors } }) => colors.input.default.text};
-    filter: opacity(0.4);
+    filter: opacity(0.8);
   }
   :focus {
     background-color: ${({ theme: { colors } }) => colors.input.default.backgroundHover};

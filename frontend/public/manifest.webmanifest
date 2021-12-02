@@ -43,14 +43,12 @@
       "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "density": "5.0",
-      "purpose": "any maskable"
+      "density": "5.0"
     }
   ],
   "start_url": ".",
   "display": "fullscreen",
   "orientation": "portrait-primary",
   "theme_color": "#88B0AE",
-  "background_color": "#88B0AE",
-  "prefer_related_applications": true
+  "background_color": "#88B0AE"
 }
